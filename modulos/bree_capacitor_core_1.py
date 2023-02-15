@@ -54,6 +54,13 @@ con = duckdb.connect()
 #!pip install  ipdb
 
 #import ipdb as deb
+def divisor_cartela_fusein():
+    '''Função para carregar os dados referentes a cartela de elos fusiveis e c '''
+    caixa = pd.read_excel(path_name+'\\db\\MH 400kvar (2).xlsx', sheet_name=8,header=1)
+    qc = """Select *  From caixa \
+               Where P="""+str(largura)+""" and H="""+str(altura)+""""""
+    caixa = con.execute(qc).df()
+    return caixa
 def resistores(resistor='0.23MO',serie=1,paralelo=1):
     '''Função para carregar a tabela de resistroes para montagem'''
     res = pd.read_excel(path_name+'\\db\\MH 400kvar (2).xlsx', sheet_name=6,header=1)
