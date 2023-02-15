@@ -1,0 +1,26 @@
+pyside2-uic main_system_bree.ui -o main_system_window.py
+pyside2-rcc bree.qrc -o bree_rc.py
+
+pyuic5 capacitor_Potencia.ui -o capacitor_Potencia.py
+pyrcc5 bree.qrc -o bree_rc.py
+pyinstaller bree.py --onefile --windowed
+d:\bree-env\Scripts\activate.ps1
+D:\Pyside2\bree_env\scripts\activate.ps1
+pip freeze > requirements.txt
+python3 -m venv tutorial-env
+
+
+dependências
+
+pip install pandas
+pip install openpyxl
+pip install pandasql
+pip install PySide2
+pip install matplotlib
+pip install seaborn
+pip install duckdb==0.4.0 
+pip install pyinstaller 
+
+pip install -r requirements.txt
+python -m pip install --user virtualenv
+py -m virtualenv -p="C:\Users\wmeba\AppData\Local\Programs\Python\Python38\python.exe" d:\virtualen

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogSys</class>
+ <widget class="QDialog" name="DialogSys">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>564</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dados do sistema</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../img/bree.qrc">
+    <normaloff>:/bree/configuracoes.png</normaloff>:/bree/configuracoes.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="formAlignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="frequNciaHzLabel">
+       <property name="text">
+        <string>Frequência (Hz)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="inputFreq">
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string>60</string>
+       </property>
+       <property name="placeholderText">
+        <string>Entre com a frequência industrial</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="tensONominalVLabel">
+       <property name="text">
+        <string>Tensão nominal (V)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="inputVn">
+       <property name="text">
+        <string>13.8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="normaLabel">
+       <property name="text">
+        <string>Norma</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="normaComboBox">
+       <item>
+        <property name="text">
+         <string>NBR 5119 - Reator</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NBR 8119 - Bobina</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>IEC 60076-6 - Reator</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>IEC 60353 - Bobina</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ANSI C57.21 - Reator Shunt</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ANSI C93.3 - Bobina</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ANSI C57.21 - Reator Serie</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="altitudeMLabel">
+       <property name="text">
+        <string>Altitude (m)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="inputAlt">
+       <property name="text">
+        <string>1000</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="imputVento">
+       <property name="text">
+        <string>Velocidade do vento (km/h)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="inputVvento">
+       <property name="text">
+        <string>120</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="temperaturaAmbienteCLabel">
+       <property name="text">
+        <string>Temperatura ambiente (°C)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="inputTamb">
+       <property name="text">
+        <string>40</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="temperaturaDeReferNciaCLabel">
+       <property name="text">
+        <string>Temperatura de referência (°C)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="inputTref">
+       <property name="text">
+        <string>75</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="nBIKVLabel">
+       <property name="text">
+        <string>NBI (kV)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="inputNBI">
+       <property name="text">
+        <string>110</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>NBI ao nível do mar (kV)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="inputNBI_sea_level"/>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="indutNciaNominalMHLabel">
+       <property name="text">
+        <string>Indutância nominal (mH)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="inputLn"/>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="indutNciaAlvoMHLabel">
+       <property name="text">
+        <string>Indutância alvo (mH)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="inputLtarget"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="labelICCSys">
+       <property name="text">
+        <string>Corrente de curto-circuito sistema (kA)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLineEdit" name="inputICCSys"/>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Corrente de curto circuito no reator (kA)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLineEdit" name="inputICC"/>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="duraOSLabel">
+       <property name="text">
+        <string>Duração (s)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLineEdit" name="inputTempo">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="correnteNominalALabel">
+       <property name="text">
+        <string>Corrente nominal (A)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QLineEdit" name="inputInominal"/>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="iccPicoKALabel">
+       <property name="text">
+        <string>Icc Pico (kA)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="1">
+      <widget class="QLineEdit" name="inputPico"/>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="correnteTotalALabel">
+       <property name="text">
+        <string>Corrente total (A)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="1">
+      <widget class="QLineEdit" name="inputITotal"/>
+     </item>
+     <item row="18" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Fator de correção da corrente pela altitude</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="1">
+      <widget class="QLineEdit" name="InputFatorCorrente">
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Fator de correção do NBI pela altitude</string>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="1">
+      <widget class="QLineEdit" name="inputFatorNBI">
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Aplicação</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QComboBox" name="comboBoxAplicacao">
+       <item>
+        <property name="text">
+         <string>Filtro de harmônico</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Limitador de corrente</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SHUNT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SVC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TCR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Alisamento</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Inrush</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Ok">
+       <property name="text">
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_cancel">
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>inputFreq</tabstop>
+  <tabstop>inputVn</tabstop>
+  <tabstop>normaComboBox</tabstop>
+  <tabstop>inputAlt</tabstop>
+  <tabstop>inputVvento</tabstop>
+  <tabstop>inputTamb</tabstop>
+  <tabstop>inputTref</tabstop>
+  <tabstop>inputNBI</tabstop>
+  <tabstop>inputNBI_sea_level</tabstop>
+  <tabstop>comboBoxAplicacao</tabstop>
+  <tabstop>inputLn</tabstop>
+  <tabstop>inputLtarget</tabstop>
+  <tabstop>inputICCSys</tabstop>
+  <tabstop>inputICC</tabstop>
+  <tabstop>inputTempo</tabstop>
+  <tabstop>inputInominal</tabstop>
+  <tabstop>inputPico</tabstop>
+  <tabstop>inputITotal</tabstop>
+  <tabstop>InputFatorCorrente</tabstop>
+  <tabstop>inputFatorNBI</tabstop>
+  <tabstop>btn_Ok</tabstop>
+  <tabstop>btn_cancel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../img/bree.qrc"/>
+ </resources>
+ <connections/>
+</ui>

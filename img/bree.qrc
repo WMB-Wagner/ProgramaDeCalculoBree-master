@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="bree">
+    <file>glass_characteristics_electrical_insulation_yarns.png</file>
+    <file>glass_characteristics_higher_resistance_than_steel_yarns.png</file>
+    <file>tremor-de-terra.png</file>
+    <file>terremoto.png</file>
+    <file>monofásico.png</file>
+    <file>trifásico.png</file>
+    <file>counter.png</file>
+    <file>currency.png</file>
+    <file>Tr202 vf.png</file>
+    <file>cross.png</file>
+    <file>ring.png</file>
+    <file>blue-document.png</file>
+    <file>folder-open-document.png</file>
+    <file>document-sticky-note.png</file>
+    <file>table.png</file>
+    <file>magnet.png</file>
+    <file>magnet32.png</file>
+    <file>ruler.png</file>
+    <file>bree.ico</file>
+    <file>bree.PNG</file>
+    <file>estatisticas.png</file>
+    <file>impressao-digital.png</file>
+    <file>lapis.png</file>
+    <file>lar.png</file>
+    <file>sair-alt.png</file>
+    <file>verificar.png</file>
+    <file>calculadora.png</file>
+    <file>configuracoes.png</file>
+  </qresource>
+</RCC>

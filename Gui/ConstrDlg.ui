@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogConstr</class>
+ <widget class="QDialog" name="DialogConstr">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dados construtivos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../img/bree.qrc">
+    <normaloff>:/bree/ruler.png</normaloff>:/bree/ruler.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="formAlignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="horizontalSpacing">
+         <number>6</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>4</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="normaLabel">
+          <property name="text">
+           <string>Material condutor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="condutorComboBox">
+          <item>
+           <property name="text">
+            <string>Al</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Inox AISI 304</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Inox AISI 310</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ANSI C57.21 - Reator Shunt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Liga de Al</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Classe de temperatura do isolamento (°C)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBoxClasse">
+          <item>
+           <property name="text">
+            <string>130</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>155</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>180</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="frequNciaHzLabel">
+          <property name="text">
+           <string>Anel de fibra inferior (mm)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="inputAnelInf">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>50</string>
+          </property>
+          <property name="placeholderText">
+           <string>Entre com a frequência industrial</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="tensONominalVLabel">
+          <property name="text">
+           <string>Anel de firbra superior (mm) </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="inputAnelSup">
+          <property name="text">
+           <string>50</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="nBIKVLabel">
+          <property name="text">
+           <string>Diâmetro interno (mm)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="inputDi">
+          <property name="text">
+           <string>1000</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Diâmetro externo (mm)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="inputDs">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="altitudeMLabel">
+          <property name="text">
+           <string>Largura do espaçador (mm)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="inputLargEsp">
+          <property name="text">
+           <string>19.05</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="imputVento">
+          <property name="text">
+           <string>Cruzeta inferior</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QComboBox" name="comboBoxCruzInf">
+          <property name="currentIndex">
+           <number>4</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>6 braços 5&quot;x1/2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6 braços 4&quot;x1/2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8 braços 3&quot;x1/2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6 braços 3&quot;x1/2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6 braços 3&quot;x1/2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4 braços 3&quot;x1/2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3 braços 3&quot;x1/2&quot;</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="labelICC">
+          <property name="text">
+           <string>Cruzeta superior</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QComboBox" name="comboBoxCruzSup"/>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Espessura das fibras de vidro (mm)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QComboBox" name="comboBoxFibra"/>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>AWG do primeiro cilindro</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QComboBox" name="comboBoxAWG"/>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Fator de folga</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLineEdit" name="input_Folga">
+          <property name="text">
+           <string>1.0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_4">
+        <property name="verticalSpacing">
+         <number>4</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="duraOSLabel">
+          <property name="text">
+           <string># Fios Axiais</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="inputAxial">
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="iccPicoKALabel">
+          <property name="text">
+           <string># Fios Radiais</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="inputRadial">
+          <property name="text">
+           <string>4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="temperaturaAmbienteCLabel">
+          <property name="text">
+           <string>Seção condutora mm²</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="inputSecao">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="temperaturaDeReferNciaCLabel">
+          <property name="text">
+           <string>Densidade de corrente em DC (A/mm²)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="inputJdc">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="indutNciaNominalMHLabel">
+          <property name="text">
+           <string>Indutância calculada (mH)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="inputLcalc">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="indutNciaAlvoMHLabel">
+          <property name="text">
+           <string>(Lcalc/Ln-1)*100 (%)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="inputErro">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="correnteNominalALabel">
+          <property name="text">
+           <string>Perdas DC (kW)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="inputPerdas">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="correnteTotalALabel">
+          <property name="text">
+           <string>Fator Q</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="inputQ">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Tmed (°C)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLineEdit" name="InputTmed">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Hot Spot (°C)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLineEdit" name="inputHotSpot">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Perdas AC (kW)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="inputPac"/>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Método de cálculo da temperatura</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QComboBox" name="comboBox_metodo_temp">
+          <item>
+           <property name="text">
+            <string>Heat constant com perdas @ 75 °C</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dubell com perdas @75 °C</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableViewCil"/>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableViewCam"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QCheckBox" name="checkBoxAuto">
+       <property name="text">
+        <string>Auto</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../img/bree.qrc">
+         <normaloff>:/bree/verificar.png</normaloff>:/bree/verificar.png</iconset>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bt_Del_Cil">
+       <property name="text">
+        <string>Delete cilindros</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../img/bree.qrc">
+         <normaloff>:/bree/cross.png</normaloff>:/bree/cross.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bt_ins_cil">
+       <property name="text">
+        <string>Insert Cilindro</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../img/bree.qrc">
+         <normaloff>:/bree/folder-open-document.png</normaloff>:/bree/folder-open-document.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bt_inicial">
+       <property name="text">
+        <string>Inicial</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Ok">
+       <property name="text">
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_calc">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Calcular</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>condutorComboBox</tabstop>
+  <tabstop>comboBoxClasse</tabstop>
+  <tabstop>inputAnelInf</tabstop>
+  <tabstop>inputAnelSup</tabstop>
+  <tabstop>inputDi</tabstop>
+  <tabstop>inputDs</tabstop>
+  <tabstop>inputLargEsp</tabstop>
+  <tabstop>comboBoxCruzInf</tabstop>
+  <tabstop>comboBoxCruzSup</tabstop>
+  <tabstop>comboBoxFibra</tabstop>
+  <tabstop>comboBoxAWG</tabstop>
+  <tabstop>input_Folga</tabstop>
+  <tabstop>inputAxial</tabstop>
+  <tabstop>inputRadial</tabstop>
+  <tabstop>inputSecao</tabstop>
+  <tabstop>inputJdc</tabstop>
+  <tabstop>inputLcalc</tabstop>
+  <tabstop>inputErro</tabstop>
+  <tabstop>inputPerdas</tabstop>
+  <tabstop>inputPac</tabstop>
+  <tabstop>inputQ</tabstop>
+  <tabstop>comboBox_metodo_temp</tabstop>
+  <tabstop>InputTmed</tabstop>
+  <tabstop>inputHotSpot</tabstop>
+  <tabstop>tableViewCil</tabstop>
+  <tabstop>tableViewCam</tabstop>
+  <tabstop>btn_calc</tabstop>
+  <tabstop>bt_ins_cil</tabstop>
+  <tabstop>bt_Del_Cil</tabstop>
+  <tabstop>checkBoxAuto</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../img/bree.qrc"/>
+ </resources>
+ <connections/>
+</ui>

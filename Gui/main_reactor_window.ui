@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BreeReactorMainWindow</class>
+ <widget class="QMainWindow" name="BreeReactorMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1496</width>
+    <height>826</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>bree Reactor Design</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../img/bree.qrc">
+    <normaloff>:/bree/magnet32.png</normaloff>:/bree/magnet32.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="labelImage">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1496</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProjetos">
+    <property name="title">
+     <string>Projetos</string>
+    </property>
+    <addaction name="actionNovo_projeto"/>
+    <addaction name="actionCarregar_projeto"/>
+    <addaction name="actionDados_do_sistema"/>
+    <addaction name="actionCorrentes_harm_nicas"/>
+    <addaction name="actionDados_construtivos"/>
+    <addaction name="actionFim"/>
+    <addaction name="actionSalvar_projeto"/>
+   </widget>
+   <widget class="QMenu" name="menuBancos_de_dados">
+    <property name="title">
+     <string>Bancos de dados</string>
+    </property>
+    <addaction name="actionProjetos"/>
+    <addaction name="actionCondutores"/>
+    <addaction name="actionMateriais"/>
+    <addaction name="actionEspessuras_das_fibras"/>
+    <addaction name="actionCruzetas"/>
+   </widget>
+   <widget class="QMenu" name="menuAcess_rios">
+    <property name="title">
+     <string>Acessórios</string>
+    </property>
+    <addaction name="actionSe_o_de_taps"/>
+    <addaction name="actionAn_is_de_perdas"/>
+    <addaction name="actionIsoladores_Hardware"/>
+   </widget>
+   <widget class="QMenu" name="menuComplementares">
+    <property name="title">
+     <string>Complementares</string>
+    </property>
+    <addaction name="actionMateriais_e_custos"/>
+    <addaction name="actionIndut_ncia_3_x_Fases"/>
+    <addaction name="actionIndut_ncia_m_dulos_iguais_em_s_rie_empilhados"/>
+    <addaction name="actionFor_as_de_curto_e_vento"/>
+    <addaction name="actionS_smico"/>
+    <addaction name="actionCampo_magn_tico"/>
+   </widget>
+   <widget class="QMenu" name="menuRelat_rios">
+    <property name="title">
+     <string>Relatórios</string>
+    </property>
+    <addaction name="actionCustos"/>
+   </widget>
+   <addaction name="menuProjetos"/>
+   <addaction name="menuBancos_de_dados"/>
+   <addaction name="menuAcess_rios"/>
+   <addaction name="menuComplementares"/>
+   <addaction name="menuRelat_rios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovo_projeto"/>
+   <addaction name="actionCarregar_projeto"/>
+   <addaction name="actionDados_do_sistema"/>
+   <addaction name="actionCorrentes_harm_nicas"/>
+   <addaction name="actionDados_construtivos"/>
+   <addaction name="actionSalvar_projeto"/>
+   <addaction name="actionFor_as_de_curto_e_vento"/>
+   <addaction name="actionIndut_ncia_m_dulos_iguais_em_s_rie_empilhados"/>
+   <addaction name="actionIndut_ncia_3_x_Fases"/>
+   <addaction name="actionEspessuras_das_fibras"/>
+   <addaction name="actionCruzetas"/>
+   <addaction name="actionIsoladores_Hardware"/>
+   <addaction name="actionS_smico"/>
+   <addaction name="actionSe_o_de_taps"/>
+   <addaction name="actionAn_is_de_perdas"/>
+   <addaction name="actionMateriais_e_custos"/>
+  </widget>
+  <action name="actionNovo_projeto">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/blue-document.png</normaloff>:/bree/blue-document.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo projeto</string>
+   </property>
+  </action>
+  <action name="actionCondutores">
+   <property name="text">
+    <string>Condutores</string>
+   </property>
+  </action>
+  <action name="actionMateriais">
+   <property name="text">
+    <string>Materiais...</string>
+   </property>
+  </action>
+  <action name="actionProjetos">
+   <property name="text">
+    <string>Projetos</string>
+   </property>
+  </action>
+  <action name="actionFim">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/cross.png</normaloff>:/bree/cross.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fim</string>
+   </property>
+  </action>
+  <action name="actionDados_do_sistema">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/glass_characteristics_electrical_insulation_yarns.png</normaloff>:/bree/glass_characteristics_electrical_insulation_yarns.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dados do sistema...</string>
+   </property>
+  </action>
+  <action name="actionDados_construtivos">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/ruler.png</normaloff>:/bree/ruler.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dados construtivos</string>
+   </property>
+  </action>
+  <action name="actionCarregar_projeto">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/document-sticky-note.png</normaloff>:/bree/document-sticky-note.png</iconset>
+   </property>
+   <property name="text">
+    <string>Carregar projeto</string>
+   </property>
+  </action>
+  <action name="actionSalvar_projeto">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/folder-open-document.png</normaloff>:/bree/folder-open-document.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar projeto</string>
+   </property>
+  </action>
+  <action name="actionCorrentes_harm_nicas">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/table.png</normaloff>:/bree/table.png</iconset>
+   </property>
+   <property name="text">
+    <string>Correntes harmônicas</string>
+   </property>
+  </action>
+  <action name="actionSe_o_de_taps">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/sair-alt.png</normaloff>:/bree/sair-alt.png</iconset>
+   </property>
+   <property name="text">
+    <string>Seção de taps</string>
+   </property>
+  </action>
+  <action name="actionAn_is_de_perdas">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/ring.png</normaloff>:/bree/ring.png</iconset>
+   </property>
+   <property name="text">
+    <string>Anéis de perdas</string>
+   </property>
+  </action>
+  <action name="actionIsoladores_Hardware">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/Tr202 vf.png</normaloff>:/bree/Tr202 vf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Isoladores &amp; Hardware</string>
+   </property>
+  </action>
+  <action name="actionFor_as_de_curto_e_vento">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/monofásico.png</normaloff>:/bree/monofásico.png</iconset>
+   </property>
+   <property name="text">
+    <string>Forças de curto 2 ou 3 x fases e vento</string>
+   </property>
+  </action>
+  <action name="actionS_smico">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/tremor-de-terra.png</normaloff>:/bree/tremor-de-terra.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sísmico</string>
+   </property>
+  </action>
+  <action name="actionCampo_magn_tico">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/magnet32.png</normaloff>:/bree/magnet32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Campo magnético</string>
+   </property>
+  </action>
+  <action name="actionIndut_ncia_3_x_Fases">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/trifásico.png</normaloff>:/bree/trifásico.png</iconset>
+   </property>
+   <property name="text">
+    <string>Indutância Trfásico módulos empilhados</string>
+   </property>
+  </action>
+  <action name="actionMateriais_e_custos">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/counter.png</normaloff>:/bree/counter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Materiais e custos</string>
+   </property>
+  </action>
+  <action name="actionCustos">
+   <property name="text">
+    <string>Custos</string>
+   </property>
+  </action>
+  <action name="actionEspessuras_das_fibras">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/glass_characteristics_higher_resistance_than_steel_yarns.png</normaloff>:/bree/glass_characteristics_higher_resistance_than_steel_yarns.png</iconset>
+   </property>
+   <property name="text">
+    <string>Espessuras das fibras</string>
+   </property>
+  </action>
+  <action name="actionCruzetas">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/configuracoes.png</normaloff>:/bree/configuracoes.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cruzetas</string>
+   </property>
+  </action>
+  <action name="actionIndut_ncia_m_dulos_iguais_em_s_rie_empilhados">
+   <property name="icon">
+    <iconset resource="../img/bree.qrc">
+     <normaloff>:/bree/calculadora.png</normaloff>:/bree/calculadora.png</iconset>
+   </property>
+   <property name="text">
+    <string>Indutância módulos iguais em série empilhados</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../img/bree.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionFim</sender>
+   <signal>destroyed()</signal>
+   <receiver>BreeReactorMainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
